@@ -15,10 +15,10 @@ class OutdatedState extends MusicBeatState
 		var guh:String;
 
 		if (controls.mobileC)
-			guh = "Sup kiddo, looks like you're running an\n
-			outdated version of Psych Engine (" + MainMenuState.psychEngineVersion + "),\n
-			please update to " + TitleState.updateVersion + "!\n
-			Press B to proceed anyway.\n
+			guh = "Sup bro, looks like you're running old version\n
+			of Psych Engine (" + MainMenuState.psychEngineVersion + "),\n
+			please update to the latest or expect bugs ig " + TitleState.updateVersion + "!\n
+			Press B to proceed anyway. but you'll miss cool patchs\n
 			\n
 			Thank you for using the Port!";
 		else
@@ -42,7 +42,7 @@ class OutdatedState extends MusicBeatState
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;
-				CoolUtil.browserLoad("https://github.com/MobilePorting/FNF-PsychEngine-Mobile/releases");
+				CoolUtil.browserLoad("https://github.com/Ethantobot11/PsychEngine-0.7.3/releases");
 			}
 			else if(controls.BACK) {
 				leftState = true;
